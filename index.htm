@@ -1,156 +1,277 @@
 <html>
-<head>
-<style>
-.Download { color: #0B95E5; font-size:20pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; }
-a.Download { color: #ffffff; font-size:12pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; background-color:#6DB1FF; padding:9px; }
-a:hover.Download { background-color:#9BC9FF; }
-.Preu { color: #000000; font-size:12pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; background-color:#eeeeee; padding:9px; }
-.SubDownload { color: #0B95E5; font-size:11pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; }
-.Contingut { color: #555555; font-size:11pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; }
-.Destacat { color: #333333; font-size:11pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; }
-.TitolDestacat { color: #333333; font-size:16pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; }
-a.TitolDestacat { color: #333333; font-size:16pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; }
-a:hover.TitolDestacat { color:#0B95E5; }
-.TitolDestacatBlanc { color: #eeeeee; font-size:16pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; }
-.PeuDePagina { color: #555555; font-size:10pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; }
-a:hover.PeuDePagina { text-decoration: underline; }
-</style>
-<link rel="shortcut icon" href="/furpuppies.ico" />
-<title>Fur Puppies</title>
-<script type="text/javascript">
+	<head>
+		<title>Fur Puppies</title>
+		<link rel="shortcut icon" href="furpuppies.ico" />
+		<style>
+body
+{
+	text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-moz-text-size-adjust: none;
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-34473101-1']);
-  _gaq.push(['_trackPageview']);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px 0px 10px 0px;
+	padding: 0px;
+	font-family: verdana, arial;
+}
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+.section
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: min(1200px,max(1024px,90vw));
+	margin: 0px;
+	padding: 0px;
+}
 
-</script>
-</head>
-<body style="margin-left:0px;margin-right:1px;margin-top:10px;margin-bottom:0px;padding:0px;background-color:#ffffff;">
-<center>
-<table border="0" cellspacing="0" cellpadding="10" width="1000">
-<tr valign="top">
-<td><img border="2" src="furpuppies.png" width="400" height="475" /></td>
-<td width="100%" class="Contingut">
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td valign="center">
-<p class="Download" style="margin-top:10px;">Fur Puppies&nbsp;&nbsp;<a href="https://www.microsoft.com/en-us/p/fur-puppies/9mzqpdczw1zj" target="_blank" class="Download">&nbsp;BUY&nbsp;</a><font class="Preu">&nbsp;4,99 &euro;&nbsp;</font></p>
-<p class="SubDownload" style="margin-top:-20px;">Windows 11/10/8/7</p>
-</td>
-<td valign="center"><img src="puppies.png" align="right" /></td>
-</tr>
-</table>
-<p>Pon and Pupis, two puppies bought by a family shortly after being born, are brutally abandoned. Alone and lost in the middle of the city, they only have each other for survival in a world that rejects them. Together they must find enough courage to undertake the long journey that is to take them again to their true home.</p>
-<p>Help them in the long path that awaits them and give them back the joy that men's cruelty took from them.</p>
-<ul>
-<li type="square">6 levels with several sublevels each one</li>
-<li type="square">1 or 2 players mode</li>
-<li type="square">Beautiful graphics plenty of colors</li>
-<li type="square">Go through a rocky zone, swim in a deep lake, cross a snowy mountain and enter in a haunted castle</li>
-</ul>
-<p align="center"><i>"You'll fall in love with Fur Puppies!"</i></p>
-<p class="TitolDestacat" style="margin-top:30px;">
-REMASTERED!
-</p>
-<p class="Destacat" style="margin-top:-10px;">
-Now Fur Puppies runs on Windows 11 and fits on any Display Mode, keeping the original taste of 90's arcade games
-</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<img src="screenshots/level5.png" width="240" height="150" />
-<img src="screenshots/level6.png" width="240" height="150" />
-<img src="screenshots/level3.png" width="240" height="150" />
-<img src="screenshots/level4.png" width="240" height="150" />
-</td>
-</tr>
-<tr><td colspan="2" align="center"><p class="PeuDePagina">Copyright © 1997-2026 <a href="mailto:furpuppies@besuau.com" title="Contact" class="PeuDePagina">Albert Rodríguez Farràs</a>. All rights reserved</p></td></tr>
-<tr><td colspan="2">&nbsp;</td></tr>
-</table>
-</center>
+.coverImage
+{
+	display: block;
+	width: auto;
+	height: auto;
+	margin: 10px;
+	padding: 0px;
+}
+.coverText
+{
+	display: block;
+	color: #444444;
+	font-size: 11pt;
+	font-weight: normal;
+	text-align: justify;
+	text-decoration: none;
+	margin: 10px;
+	padding: 0px;
+}
 
-<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#dddddd"><tr><td><center><table border="0" cellspacing="0" cellpadding="10" width="1000"><tr><td colspan="2">
+.puppies
+{
+	display: block;
+	width: auto;
+	height: auto;
+	margin: 0px;
+	padding: 6px 0px 0px 0px;
+}
 
-<p class="TitolDestacat" style="margin-top:10px;margin-bottom:10px;">
-<a href="manual" class="TitolDestacat">USER GUIDE</a>
-</p>
-</center></td></tr></table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000"><tr><td><center><table border="0" cellspacing="0" cellpadding="10" width="1000"><tr><td colspan="2">
+.title
+{
+	display: block;
+	color: #0B95E5;
+	font-size: 24pt;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+.subtitle
+{
+	display: block;
+	color: #0B95E5;
+	font-size: 12pt;
+	margin: 10px 0px 25px 0px;
+	padding: 0px;
+}
 
-<p class="TitolDestacatBlanc" style="margin-top:10px;">
-USER REVIEWS
-</p>
+.windowsLogo
+{
+	display: block;
+	width: 20px;
+	height: auto;
+	margin-right: 8px;
+}
 
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr valign="top">
-<td width="50%" align="left">
-<iframe width="450" height="250" src="https://www.youtube.com/embed/3_yYE8XEeDY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br/><br/>
-</td>
-<td width="50%" align="left">
-<iframe width="450" height="250" src="https://www.youtube.com/embed/E1tYTL4Vx9E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br/><br/>
-</td>
-</tr>
-<tr valign="top">
-<td width="50%" align="left">
-<iframe width="450" height="250" src="https://www.youtube.com/embed/-1SvBfnHO7E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</td>
-<td width="50%" align="left">
-<iframe width="450" height="250" src="https://www.youtube.com/embed/LOWLhC0DroE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</td>
-</tr>
-<tr><td colspan="2">&nbsp;</td></tr>
-</table>
+.text
+{
+	display: block;
+	margin: 10px 0px 0px 0px;
+	padding: 0px;
+}
 
-</td></tr></table></center></td></tr></table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#dddddd"><tr><td><center><table border="0" cellspacing="0" cellpadding="10" width="1000"><tr><td colspan="2">
+.highlight
+{
+	display: block;
+	color: #222222;
+	font-size: 16pt;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 25px 0px 0px 0px;
+	padding: 0px;
+}
+.subhighlight
+{
+	display: block;
+	color: #222222;
+	font-size: 11pt;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 10px 0px 0px 0px;
+	padding: 0px;
+}
 
-<p class="TitolDestacat" style="margin-top:10px;">
-CHEATS
-</p>
+.screenshot
+{
+	display: block;
+	width: 320px;
+	height: auto;
+	margin: 10px;
+}
 
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr valign="top">
-<td width="50%" class="Contingut">
-<p class="Destacat" style="margin-top:-10px;">Select level</p>
-<p>
-In the Select Puppy screen, type:<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;<i>GOTOLS</i><br />
-<br />
-where <i>L</i> is the level and <i>S</i> the section<br />
-Example: "GOTO63" starts at level 6 section 3<br />
-</p>
-</td>
-<td width="50%" class="Contingut">
-<p class="Destacat" style="margin-top:-10px;">God mode</p>
-<p>
-During the game, type:<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;<i>GODPUPPY</i><br />
-<br />
-Type it again to return to normal mode
-</p>
-</td>
-</tr>
-<tr><td colspan="2">&nbsp;</td></tr>
-</table>
+.footer
+{
+	color: #444444;
+	font-size: 10pt;
+	font-weight: normal;
+	text-align: center;
+	width: 100%;
+	margin: 10px;
+}
+a.footer
+{
+	margin: 0px;
+	text-decoration: none;
+}
+a:hover.footer
+{
+	text-decoration: underline;
+}
 
-</td></tr></table></center></td></tr></table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#eeeeee"><tr><td><center><table border="0" cellspacing="0" cellpadding="10" width="1000"><tr><td colspan="2">
+.onDesktopOnly
+{
+	display: unset;
+}
+.onMobileOnly
+{
+	display: none;
+}
 
-<center>
-<p class="PeuDePagina" style="margin-top:10px;margin-bottom:0px;">Copyright © 1997-2026 <a href="mailto:furpuppies@besuau.com" title="Contact" class="PeuDePagina">Albert Rodríguez Farràs</a>. All rights reserved</p>
-&nbsp;
-</center>
+@media (max-width: 1024px)
+{
+	body
+	{
+		margin-top: 4vw;
+	}
 
-</body>
+	.section
+	{
+		flex-direction: column;
+		justify-content: unset;
+		align-items: center;
+		width: unset;
+		height: auto;
+	}
+
+	.coverImage
+	{
+		width: 75vw;
+		margin: 4vw;
+	}
+	.coverText
+	{
+		font-size: 4.6vw;
+		margin: 4vw;
+	}
+
+	.puppies
+	{
+		width: 24vw;
+		padding: 4vw 0vw 0vw 0vw;
+	}
+
+	.title
+	{
+		font-size: 9vw;
+		margin: 0vw;
+	}
+	.subtitle
+	{
+		font-size: 5vw;
+		margin: 1.5vw 0vw 8vw 0vw;
+	}
+
+	.windowsLogo
+	{
+		width: 6vw;
+		height: auto;
+		margin-right: 2.4vw;
+	}
+
+	.text
+	{
+		margin: 4vw 0px 0px 0px;
+	}
+
+	.highlight
+	{
+		font-size: 6vw;
+		margin: 8vw 0px 0px 0px;
+	}
+	.subhighlight
+	{
+		font-size: 4.6vw;
+		margin: 4vw 0px 0px 0px;
+	}
+
+	.screenshot
+	{
+		width: 90vw;
+		margin: 4vw;
+	}
+
+	.footer
+	{
+		font-size: 4.2vw;
+		margin: 4vw;
+	}
+	a.footer
+	{
+		margin: 0vw;
+	}
+
+	.onDesktopOnly
+	{
+		display: none;
+	}
+	.onMobileOnly
+	{
+		display: unset;
+	}
+}
+		</style>
+	</head>
+
+	<body>
+		<div class="section">
+			<img class="coverImage" border="2" src="furpuppies.png" />
+			<div class="coverText">
+				<img class="puppies" src="puppies.png" align="right" />
+				<div class="title">Fur Puppies</div>
+				<div class="subtitle"><img class="windowsLogo" src="windows.png" border="0" align="left" />Windows 11/10</div>
+				<div class="text">Pon and Pupis, two puppies bought by a family shortly after being born, are brutally abandoned. Alone and lost in the middle of the city, they only have each other for survival in a world that rejects them. Together they must find enough courage to undertake the long journey that is to take them again to their true home.</div>
+				<div class="text">Help them in the long path that awaits them and give them back the joy that men's cruelty took from them.</div>
+				<ul>
+					<li type="square">6 levels with several sublevels each one</li>
+					<li type="square">1 or 2 players mode</li>
+					<li type="square">Beautiful graphics plenty of colors</li>
+					<li type="square">Go through a rocky zone, swim in a deep lake, cross a snowy mountain and enter in a haunted castle</li>
+				</ul>
+				<div align="center"><i>"You'll fall in love with Fur Puppies!"</i></div>
+				<div class="highlight">REMASTERED!</div>
+				<div class="subhighlight">Now Fur Puppies runs on Windows 11 and fits on any Display Mode, keeping the original taste of 90's arcade games</div>
+			</div>
+		</div>
+
+		<div class="section">
+			<img class="screenshot" src="screenshots/level5.png" />
+			<img class="screenshot" src="screenshots/level6.png" />
+			<img class="screenshot" src="screenshots/level3.png" />
+			<img class="screenshot" src="screenshots/level4.png" />
+		</div>
+
+		<div class="section">
+			<div class="footer"><font class="onDesktopOnly">Copyright </font>© 1997-2026 <a class="footer" href="mailto:furpuppies@besuau.com" title="Contact">Albert Rodríguez Farràs</a><font class="onDesktopOnly">. </font><font class="onMobileOnly"><br /></font>All rights reserved</div>
+		</div>
+	</body>
 </html>
