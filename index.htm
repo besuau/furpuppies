@@ -47,6 +47,52 @@ body
 	margin: 10px 0px 10px 10px;
 	padding: 0px;
 }
+.coverHeader
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0px 0px 25px 0px;
+	padding: 0px;
+}
+.coverTitle
+{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+
+.download
+{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+a.download
+{
+	color: #ffffff;
+	background-color: #6DB1FF;
+	font-size: 12pt;
+	text-align: center;
+	text-decoration: none;
+	padding: 8px 16px 8px 16px;
+	border-radius: 6px 6px 0px 0px;
+}
+a:hover.download
+{
+	background-color: #9BC9FF;
+}
+.price
+{
+	display: block;
+	color: #000000;
+	background-color: #eeeeee;
+	font-size: 11pt;
+	font-weight: bold;
+	text-align: center;
+	padding: 8px 16px 8px 16px;
+	border-radius: 0px 0px 6px 6px;
+}
 
 .puppies
 {
@@ -71,7 +117,7 @@ body
 	display: block;
 	color: #0B95E5;
 	font-size: 12pt;
-	margin: 10px 0px 25px 0px;
+	margin: 10px 0px 0px 0px;
 	padding: 0px;
 }
 
@@ -187,6 +233,15 @@ a:hover.footer
 		font-size: 4.6vw;
 		margin: 4vw;
 	}
+	.coverHeader
+	{
+		margin: 0vw 0vw 8vw 0vw;
+	}
+
+	.download
+	{
+		display: none;
+	}
 
 	.puppies
 	{
@@ -202,7 +257,7 @@ a:hover.footer
 	.subtitle
 	{
 		font-size: 5vw;
-		margin: 1.5vw 0vw 8vw 0vw;
+		margin: 1.5vw 0vw 0vw 0vw;
 	}
 
 	.windowsLogo
@@ -270,9 +325,17 @@ a:hover.footer
 		<div class="section">
 			<img class="coverImage" border="2" src="furpuppies.png" />
 			<div class="coverText">
-				<img class="puppies" src="puppies.png" align="right" />
-				<div class="title">Fur Puppies</div>
-				<div class="subtitle"><img class="windowsLogo" src="windows.png" border="0" align="left" />Windows 11/10</div>
+				<div class="coverHeader">
+					<div class="coverTitle">
+						<div class="title">Fur Puppies</div>
+						<div class="subtitle"><img class="windowsLogo" src="windows.png" border="0" align="left" />Windows 11/10</div>
+					</div>
+					<img class="puppies" src="puppies.png" />
+					<div class="download">
+						<a class="download">DOWNLOAD</a>
+						<font class="price">Free</font>
+					</div>
+				</div>	
 				<p class="text">Pon and Pupis, two puppies bought by a family shortly after being born, are brutally abandoned. Alone and lost in the middle of the city, they only have each other for survival in a world that rejects them. Together they must find enough courage to undertake the long journey that is to take them again to their true home.</p>
 				<p class="text">Help them in the long path that awaits them and give them back the joy that men's cruelty took from them.</p>
 				<ul class="text">
